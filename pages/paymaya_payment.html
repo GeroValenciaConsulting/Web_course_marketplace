@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PayMaya Payment</title>
+  <link rel="stylesheet" href="../css/paymaya.css">
+</head>
+<body>
+  <div class="container">
+    <h2>PayMaya Payment</h2>
+
+    <form id="paymentForm">
+      <form id="paymentForm">
+        <div class="form-group">
+          <label for="account_name">Account Name:</label>
+          <input type="text" id="account_name" name="account_name" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="account_number">Account Number:</label>
+          <div class="tooltip">
+            <input type="text" id="account_number" name="account_number" required pattern="09[0-9]{9}">
+            <span class="tooltiptext">Account number must start with 09</span>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+      <div id="cartContainer">
+        
+        <div id="cartTotal">
+          <!-- Insert dynamic cart total here using JavaScript -->
+        </div>
+      </div>
+
+      <button id="payBtn" class="btn">Pay</button>
+      <button id="chooseMethodBtn" class="btn">Choose Another Payment Method</button>
+    </form>
+  </div>
+  <script src="../scripts/paymaya.js"></script>
+</body>
+</html>

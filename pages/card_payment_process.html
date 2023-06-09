@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Payment Process</title>
+  <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Card Payment Process</h2>
+
+    <div class="payment-info">
+      <label>Bank Name:</label>
+      <span id="bank_name"></span>
+    </div>
+
+    <div class="payment-info">
+      <label>Account Name:</label>
+      <span id="account_name"></span>
+    </div>
+
+    <div class="payment-info">
+      <label>Account Number:</label>
+      <span id="account_number"></span>
+    </div>
+
+    <div class="payment-info">
+      <label>Email Address:</label>
+      <span id="email"></span>
+    </div>
+
+    <h3>Order Details:</h3>
+    <div id="orderDetails">
+      <!-- Insert dynamic order details here using JavaScript -->
+    </div>
+    <br>
+    
+    <div id="totalPrice">
+      <!-- Insert dynamic total price here using JavaScript -->
+    </div>
+    
+    <br>
+    <button onclick="window.location.href = '../index.html';">Go to Homepage</button>
+    <button onclick="window.location.href = 'product.html';">Go to Product Page</button>
+    <button onclick="window.print();">Print</button>
+  </div>
+  <script src="../scripts/card_proc.js"></script>
+</body>
+</html>

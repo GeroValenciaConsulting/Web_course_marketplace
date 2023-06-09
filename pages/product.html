@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Dashboard</title>
+  <link rel="stylesheet" href="../css/product.css">
+  <script src="../scripts/product_script.js"></script>
+</head>
+<body>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="../index.html" class="btn">Home</a>
+  </div>
+
+  <div class="cart" id="cartContainer">
+    <p>Your cart is empty.</p>
+  </div>
+
+  <div class="container">
+    <h2>Product Dashboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Buttons -->
+  <div style="text-align: center; margin-top: 20px;">
+    <button id="viewProductsBtn" class="btn" onclick="viewProducts()">View Products</button>
+    <button id="checkoutBtn" class="btn" onclick="checkout()" style="display: none;">Checkout</button>
+    <button id="resetCartBtn" class="btn" onclick="resetCart()" style="display: none;">Reset Cart</button>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="checkoutModalContent"></div>    
+        <button class="btn" onclick="proceedToPayment()">Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

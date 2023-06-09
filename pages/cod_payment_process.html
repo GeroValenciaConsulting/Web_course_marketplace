@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COD Payment Process</title>
+  <link rel="stylesheet" href="../css/cod.css">
+</head>
+<body>
+  <div class="container">
+    <h2>COD Payment Process</h2>
+
+    <div class="payment-info">
+      <label>Name:</label>
+      <span id="name"></span>
+    </div>
+
+    <div class="payment-info">
+      <label>Address:</label>
+      <span id="address"></span>
+    </div>
+
+    <div class="payment-info">
+      <label>Contact Number:</label>
+      <span id="contact_number"></span>
+    </div>
+
+    <h3>Order Details:</h3>
+    <div id="orderDetails">
+      <!-- Insert dynamic order details here using JavaScript -->
+    </div>
+    <br>
+    
+    <div id="totalPrice">
+      <!-- Insert dynamic total price here using JavaScript -->
+    </div>
+    
+    <br>
+    <button onclick="window.location.href = '../index.html';">Go to Homepage</button>
+    <button onclick="window.location.href = 'product.html';">Go to Product Page</button>
+    <button onclick="window.print();">Print</button>
+  </div>
+
+  <script src="../scripts/cod_proc.js"></script>
+</body>
+</html>
+
+
